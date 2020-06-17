@@ -1,0 +1,43 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="BaseTheme" />
+
+    <style name="AppThemeLight" parent="BaseTheme.Light" />
+
+    <style name="BaseTheme.Light" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="BaseTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDrawsSystemBarBackgrounds" tools:targetApi="lollipop">true</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.MaterialComponents.Dark.ActionBar">
+        <item name="android:colorControlNormal">@color/colorText</item>
+    </style>
+
+    <style name="PopupOverlay" parent="ThemeOverlay.MaterialComponents.Light">
+        <item name="android:colorControlNormal">@color/colorText</item>
+    </style>
+
+    <style name="Label" parent="TextAppearance.MaterialComponents.Subtitle1">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+
+    <style name="Title" parent="AppTheme" />
+
+    <style name="Title.Recipe">
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+</resources>

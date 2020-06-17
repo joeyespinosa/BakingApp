@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimaryDark"
+        android:padding="@dimen/padding">
+
+        <TextView
+            android:layout_margin="@dimen/vertical_margin"
+            android:id="@+id/textview_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginEnd="@dimen/vertical_margin_double"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="1" />
+
+        <TextView
+            android:layout_margin="@dimen/vertical_margin"
+            android:id="@+id/textview_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="@tools:sample/lorem" />
+    </LinearLayout>
+
+</layout>

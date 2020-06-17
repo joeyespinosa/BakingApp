@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="ingredient"
+            type="com.axelia.bakingapp.data.local.model.Ingredient" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_margin="@dimen/horizontal_margin"
+            android:id="@+id/textview_ingredient_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            android:layout_toStartOf="@+id/text_quantity"
+            android:text="@{ingredient.ingredient}"
+            android:layout_marginEnd="@dimen/vertical_margin_double"
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="@tools:sample/lorem" />
+
+        <TextView
+            android:layout_margin="@dimen/horizontal_margin"
+            android:id="@+id/textview_quantity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:text='@{String.format("%s %s", ingredient.quantity, ingredient.measure)}'
+            android:textAppearance="@style/TextAppearance.MaterialComponents.Body2"
+            tools:text="@tools:sample/last_names" />
+    </LinearLayout>
+</layout>

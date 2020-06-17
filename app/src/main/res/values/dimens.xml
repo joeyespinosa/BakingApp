@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_width">200dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
+
+    <dimen name="vertical_margin_half">4dp</dimen>
+    <dimen name="vertical_margin">8dp</dimen>
+    <dimen name="vertical_margin_double">16dp</dimen>
+    <dimen name="vertical_margin_tri">24dp</dimen>
+    <dimen name="vertical_margin_quad">32dp</dimen>
+
+    <dimen name="horizontal_margin">8dp</dimen>
+    <dimen name="horizontal_margin_double">16dp</dimen>
+    <dimen name="horizontal_margin_tri">32dp</dimen>
+
+    <dimen name="padding">8dp</dimen>
+    <dimen name="padding_double">16dp</dimen>
+    <dimen name="padding_tri">24dp</dimen>
+
+    <dimen name="tab_height">64dp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+</resources>
